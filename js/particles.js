@@ -54,7 +54,7 @@ class Particle {
   }
   
   function draw() {
-    background(0);
+    background(10);
     for (var i = 0; i < particles.length; i++) {
       particles[i].update();
       particles[i].display();
