@@ -13,6 +13,7 @@ body{
 /* ================================================== FIRST PART ================================================== */
 .wrapper-1{
     filter: drop-shadow(0 10px 10px black);
+    height: auto;
 }
 
 .navbar{
@@ -128,31 +129,32 @@ body{
     /*scroll-snap-align: start;*/
     width: 100%;
     min-height: 100vh;
-    margin: 30px auto; 
     background: transparent;
 }
 
-.about,
-.title{
-    width: 70%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
-    margin: auto;
-}
-
-.about h1,
+.wrapper-2 h1,
 .title h1{
+    padding: 30px 0 0 0;
     font-weight: 500;
     font-size: 2.5em;
 }
 
-.about h5{
+.wrapper-2 h5{
+    width: 70%;
+    padding: 10px 0 0 0;
+    margin: auto;
     font-weight: 400;
     font-size: 1em;
+}
+
+.wrapper-2 > img{
+    width: 25px;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,-95%);
+    animation: arrow 2s linear infinite;
+    opacity: .2;
 }
 
 .projects{
