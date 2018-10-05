@@ -11,12 +11,12 @@ class Particle {
   
     display() {
       noStroke();
-      fill(255,100);
+      fill(255,150);
       ellipse(this.position.x, this.position.y, this.mass, this.mass);
     }
   
     drawLine(p){
-      if((p5.Vector.sub(this.position,p.position).mag()) < 50){
+      if((p5.Vector.sub(this.position,p.position).mag()) < 80){
         stroke(255,50);
         strokeWeight(0.5);
         line(this.position.x,this.position.y,p.position.x,p.position.y);
@@ -33,6 +33,7 @@ class Particle {
   }
   
   var particles = [];
+  var X_AXIS = 2;
   
   function setup() {
     var cnv = createCanvas(windowWidth, windowHeight);
@@ -42,7 +43,7 @@ class Particle {
       if(windowWidth < 870){
           n = 15;
       }else{
-          n = 40;
+          n = 60;
       }
     for (var i = 0; i < n; i++) {
       particles.push(new Particle());
@@ -54,7 +55,8 @@ class Particle {
   }
   
   function draw() {
-    background(10);
+    background(0,128,128);
+    //setGradient(0, 0, windowWidth, windowHeight, color(72,209,204), color(0,128,128), X_AXIS);
     for (var i = 0; i < particles.length; i++) {
       particles[i].update();
       particles[i].display();
@@ -64,5 +66,18 @@ class Particle {
         }
       }
       particles[i].checkEdges();
+    }
+  }
+
+  function setGradient(x, y, w, h, c1, c2, axis) {
+
+    noFill();
+    if (axis == X_AXIS) {  // Left to right gradient
+      for (var i = x; i <= x+w; i++) {
+        var inter = map(i, x, x+w, 0, 1);
+        var c = lerpColor(c1, c2, inter);
+        stroke(c);
+        line(i, y, i, y+h);
+      }
     }
   }

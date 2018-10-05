@@ -6,41 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AG | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="js/particles.js"></script>
 </head>
 <body>
-    <div class="wrapper-1">
+    <div id="section-1" class="wrapper-1">
         <div id="particles"></div>
         <div class="navbar">
             <h3>
-                A <div>|</div> G
+                A <div class="divider">|</div> G
             </h3>
         </div>
         <div class="landing">
             <h1 class="name">Aleksandar Gjoreski</h1>
-            <h2 class="profession">FRONT-END <div>|</div> BACK-END <div>|</div> FULL STACK</h2>
-            <img src="./media/other/arrowDown.svg" />
+            <h2 class="profession">FRONT-END <div class="divider">|</div> BACK-END <div class="divider">|</div> FULL STACK</h2>
         </div>
-        <a id="arrow" href="#section-2"></a>
+        <img class="arrowImage" src="./media/other/arrowDown.svg" />
+        <a id="arrow-1" class="goTo" href="#section-2"></a>
     </div>
     
     <div id="section-2" class="wrapper-2">
-            <h1>About</h1>
-            <h5>
-                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor 
-                    incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+        <div class="about-me">
+            <h1 class="title"><span>About</span></h1>
+            <h5 class="about">
+                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor 
+                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
             </h5>
-            <img src="./media/other/arrowDownBlack.svg">
-            <a id="arrow" href="#section-3"></a>
+        </div>
+        <img class="arrowImage" src="./media/other/arrowDownBlack.svg" />
+        <a id="arrow-2" class="goTo" href="#section-3"></a>
     </div>
 
     <div id="section-3" class="wrapper-3">
-        <div class="title">
-            <h1>My Works</h1>
-        </div>
+        <h1 class="title"><span>My Works</span></h1>
         <div class="projects">
             <div class="project ddreamkol">
                 <div class="p_name"></div>
@@ -54,7 +54,10 @@
             <div class="project news"></div>
             <div class="project codepen"></div>
         </div>
+        <img class="arrowImage" src="./media/other/arrowDownBlackReverse.svg" />
+        <a id="arrow-3" class="goTo" href="#section-2"></a>
     </div>
+
     <footer>2018 - Aleksandar Gjoreski</footer>
     
     <script src="./js/script.js"></script>
