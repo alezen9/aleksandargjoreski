@@ -7,6 +7,7 @@
     <title>AG | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/alexBox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="js/particles.js"></script>
@@ -20,19 +21,43 @@
             </h3>
         </div>
         <div class="landing">
-            <h1 class="name">Aleksandar Gjoreski</h1>
+            <h1 class="name"><span>A</span>leksandar <span>G</span>joreski</h1>
             <h2 class="profession">FRONT-END <div class="divider">|</div> BACK-END <div class="divider">|</div> FULL STACK</h2>
+            <div class="contacts">
+                <a href="https://github.com/alezen9">
+                    <img src="media/links/github.png" >
+                </a>
+                <a href="https://www.linkedin.com/in/aleksandar-gjoreski-8879a6108/">
+                    <img src="media/links/linkedin.svg" >
+                </a>
+                <a href="https://codepen.io/alezen9/">
+                    <img src="media/links/codepen.png" >
+                </a>
+            </div>
         </div>
         <img class="arrowImage" src="./media/other/arrowDown.svg" />
         <a id="arrow-1" class="goTo" href="#section-2"></a>
     </div>
     
     <div id="section-2" class="wrapper-2">
+        <div class="background">
+            <img src="./media/prog_lang/html.svg" >
+            <img src="./media/prog_lang/css.svg" >
+            <img src="./media/prog_lang/illustrator.svg" >
+            <img src="./media/prog_lang/reactjs.svg" >
+            <img src="./media/prog_lang/redux.svg" >
+            <img src="./media/prog_lang/javascript.svg" >
+            <img src="./media/prog_lang/p5js.png" >
+            <img src="./media/prog_lang/processing.png" >
+            <img src="./media/prog_lang/nodejs.png" >
+        </div>
         <h1 class="title"><span>About</span></h1>
         <div class="about-me">
             <div class="main-info">
                 <div class="card">
-                    <img src="./media/other/portrait.jpg" alt="Mypic" >
+                    <a href="media/other/portrait.webp" class="alex-box" gallery-alex-box="myGallery">
+                        <img src="./media/other/portrait.webp" width="200" alt="Mypic" >
+                    </a>
                     <div class="lower">
                         <h4>Nationality: <span>Macedonian</span></h4>
                         <h4>Email: <span>aj0715@live.com</span></h4>
@@ -56,7 +81,7 @@
                 </a>
             </div>
         </div>
-        <img class="arrowImage" src="./media/other/arrowDownBlack.svg" />
+        <img class="arrowImage" src="./media/other/arrowDown.svg" />
         <a id="arrow-2" class="goTo" href="#section-3"></a>
     </div>
 
@@ -64,63 +89,71 @@
         <h1 class="title"><span>My Works</span></h1>
         <div class="projects"><!--
             <div class="project ddreamkol">
-                <div class="p_name"></div>
+                <div class="details"></div>
             </div>
             <div class="project lightbox">
-                <div class="p_name"></div>
+                <div class="details"></div>
             </div>
             <div class="project login">
-                <div class="p_name"></div>
+                <div class="details"></div>
             </div>
             <div class="project news"></div>
             <div class="project codepen"></div>
         </div>-->
 
         <div class="scene">
-                <div class="carousel">
-                  <div class="carousel__cell">
-                    <div class="project ddreamkol">
-                        <div class="p_name"></div>
-                    </div>
-                  </div>
-                  <div class="carousel__cell">
-                      <div class="project lightbox">
-                        <div class="p_name"></div>
-                    </div>
-                  </div>
-                  <div class="carousel__cell">
-                        <div class="project login">
-                            <div class="p_name"></div>
-                        </div>
-                  </div>
-                  <div class="carousel__cell">
-                        <div class="project login">
-                            <div class="p_name"></div>
-                        </div>
-                  </div>
-                  <div class="carousel__cell">
-                        <div class="project login">
-                            <div class="p_name"></div>
-                        </div>
-                  </div>
-                  <div class="carousel__cell">
-                        <div class="project login">
-                            <div class="p_name"></div>
-                        </div>
-                  </div>
+            <div class="carousel">
+                <div class="carousel__cell">
+                <div class="project ddreamkol">
+                    <div class="details"></div>
                 </div>
-              </div>
-              
-              <div class="carousel-options">
-                  <button class="previous-button">Previous</button>
-                  <button class="next-button">Next</button>
-              </div>
-                    <img class="arrowImage" src="./media/other/arrowDownBlackReverse.svg" />
-                    <a id="arrow-3" class="goTo" href="#section-2"></a>
+                </div>
+                <div class="carousel__cell">
+                    <div class="project lightbox">
+                    <div class="details"></div>
+                </div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="project login">
+                        <div class="details"></div>
+                    </div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="project login">
+                        <div class="details"></div>
+                    </div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="project login">
+                        <div class="details"></div>
+                    </div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="project login">
+                        <div class="details">
+                            <a href="#">
+                                <div class="demo"></div>
+                            </a>
+                            <a href="#">
+                                    <div class="github"></div>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="carousel-options">
+            <button class="previous-button">Previous</button>
+            <button class="next-button">Next</button>
+        </div>
+        <img class="arrowImage" src="./media/other/arrowDownBlackReverse.svg" />
+        <a id="arrow-3" class="goTo" href="#section-2"></a>
     </div>
     <footer>2018 - Aleksandar Gjoreski</footer>
     
     <script src="./js/script.js"></script>
     <script src="./js/carousel.js"></script>
+    <script src="js/alexBox.min.js"></script>
 </body>
 </html>

@@ -31,14 +31,14 @@ function rotateCarousel() {
             if(index == selectedIndex%cellCount){
                 el.style.opacity = 1;
             }else{
-                el.style.opacity = 0.2;
+                el.style.opacity = 0.1;
             }
         }else{
             var i = (cellCount-Math.abs(selectedIndex%cellCount) == 6) ? 0 : cellCount-Math.abs(selectedIndex%cellCount);
             if(index == i){
                 el.style.opacity = 1;
             }else{
-                el.style.opacity = 0.2;
+                el.style.opacity = 0.1;
             }
         }
     });

@@ -55,7 +55,7 @@ class Particle {
   }
   
   function draw() {
-    background(	0, 58, 58);
+    background(0,75,75);
     //setGradient(0, 0, windowWidth, windowHeight, color(72,209,204), color(0,128,128), X_AXIS);
     for (var i = 0; i < particles.length; i++) {
       particles[i].update();
