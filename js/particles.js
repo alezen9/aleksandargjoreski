@@ -11,13 +11,13 @@ class Particle {
   
     display() {
       noStroke();
-      fill(255,150);
+      fill(255,100);
       ellipse(this.position.x, this.position.y, this.mass, this.mass);
     }
   
     drawLine(p){
       if((p5.Vector.sub(this.position,p.position).mag()) < 80){
-        stroke(255,50);
+        stroke(255,20);
         strokeWeight(0.5);
         line(this.position.x,this.position.y,p.position.x,p.position.y);
       }
@@ -55,7 +55,7 @@ class Particle {
   }
   
   function draw() {
-    background(0,128,128);
+    background(	0, 58, 58);
     //setGradient(0, 0, windowWidth, windowHeight, color(72,209,204), color(0,128,128), X_AXIS);
     for (var i = 0; i < particles.length; i++) {
       particles[i].update();

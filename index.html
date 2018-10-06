@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AG | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="js/particles.js"></script>
@@ -27,13 +28,33 @@
     </div>
     
     <div id="section-2" class="wrapper-2">
+        <h1 class="title"><span>About</span></h1>
         <div class="about-me">
-            <h1 class="title"><span>About</span></h1>
+            <div class="main-info">
+                <div class="card">
+                    <img src="./media/other/portrait.jpg" alt="Mypic" >
+                    <div class="lower">
+                        <h4>Nationality: <span>Macedonian</span></h4>
+                        <h4>Email: <span>aj0715@live.com</span></h4>
+                        <h4>Phone: <span>+39 340 894 76 41</span></h4>
+                    </div>
+                </div>
+            </div>
             <h5 class="about">
-                Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor 
-                incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                    I’m a 25 years old IT student from the mountainous place of Bocenago, Italy. I've been living here
+                    since I was 6. <br>
+                    I have few years of working experience in various positions in a building company but
+                    I've always been fascinated by computers and what they can do so 3 years after my highschool graduation
+                    I started attending the Computer Science course at the University of Trento.<br>
+                    In my spare time I love to do sport, especially playing football, which i play in a team,tennis and pretty much all kinds of sport.
+                    I also love coding, I usuallymake small projects by myself in order to improve my skills and to have some fun.<br>
+                    When i don't play football and i don't code,I like watching movies, reading and drawing, perhaps sleeping and eating too.
             </h5>
+            <div class="other">
+                <a href="./media/other/AGResume.pdf" download>
+                    <button type="button">Download Resume</button>
+                </a>
+            </div>
         </div>
         <img class="arrowImage" src="./media/other/arrowDownBlack.svg" />
         <a id="arrow-2" class="goTo" href="#section-3"></a>
@@ -41,7 +62,7 @@
 
     <div id="section-3" class="wrapper-3">
         <h1 class="title"><span>My Works</span></h1>
-        <div class="projects">
+        <div class="projects"><!--
             <div class="project ddreamkol">
                 <div class="p_name"></div>
             </div>
@@ -53,13 +74,53 @@
             </div>
             <div class="project news"></div>
             <div class="project codepen"></div>
-        </div>
-        <img class="arrowImage" src="./media/other/arrowDownBlackReverse.svg" />
-        <a id="arrow-3" class="goTo" href="#section-2"></a>
-    </div>
+        </div>-->
 
+        <div class="scene">
+                <div class="carousel">
+                  <div class="carousel__cell">
+                    <div class="project ddreamkol">
+                        <div class="p_name"></div>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                      <div class="project lightbox">
+                        <div class="p_name"></div>
+                    </div>
+                  </div>
+                  <div class="carousel__cell">
+                        <div class="project login">
+                            <div class="p_name"></div>
+                        </div>
+                  </div>
+                  <div class="carousel__cell">
+                        <div class="project login">
+                            <div class="p_name"></div>
+                        </div>
+                  </div>
+                  <div class="carousel__cell">
+                        <div class="project login">
+                            <div class="p_name"></div>
+                        </div>
+                  </div>
+                  <div class="carousel__cell">
+                        <div class="project login">
+                            <div class="p_name"></div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="carousel-options">
+                  <button class="previous-button">Previous</button>
+                  <button class="next-button">Next</button>
+              </div>
+                    <img class="arrowImage" src="./media/other/arrowDownBlackReverse.svg" />
+                    <a id="arrow-3" class="goTo" href="#section-2"></a>
+    </div>
     <footer>2018 - Aleksandar Gjoreski</footer>
     
     <script src="./js/script.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 </html>
