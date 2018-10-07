@@ -34,7 +34,7 @@ function rotateCarousel() {
                 el.style.opacity = 0.1;
             }
         }else{
-            var i = (cellCount-Math.abs(selectedIndex%cellCount) == 6) ? 0 : cellCount-Math.abs(selectedIndex%cellCount);
+            var i = (cellCount-Math.abs(selectedIndex%cellCount) == 5) ? 0 : cellCount-Math.abs(selectedIndex%cellCount);
             if(index == i){
                 el.style.opacity = 1;
             }else{
@@ -121,6 +121,7 @@ function swipedetect(el, callback){
         if (elapsedTime <= allowedTime){ // first condition for awipe met
             if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint){ // 2nd condition for horizontal swipe met
                 swipedir = (distX < 0)? 'left' : 'right' // if dist traveled is negative, it indicates left swipe
+                e.preventDefault()
             }
         }
         handleswipe(swipedir)
