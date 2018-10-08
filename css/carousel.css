@@ -46,7 +46,7 @@
   margin-bottom: 200px;
 }
 
-@media all and (max-width: 765px),
+@media all and (max-width: 768px),
 (orientation: landscape) and (min-width: 800px) and (max-width: 840px){
     .scene{
         width: 250px;
