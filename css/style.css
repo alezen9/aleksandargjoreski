@@ -3,6 +3,7 @@ body{
     text-align: center;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth
 }
 
 button:focus,a:focus{outline: 0;}
@@ -101,13 +102,6 @@ a:focus{outline: 0;}
     height: 1em;
     top: 0;
     width: 5em;
-}
-.wrapper-2 .title span:before,
-.wrapper-2 .title span:after {
-    border-bottom: 1px solid white;
-}
-.wrapper-3 .title span:before,
-.wrapper-3 .title span:after {
     border-bottom: 1px solid black;
 }
 .title span:before {
@@ -257,7 +251,7 @@ a:focus{outline: 0;}
     position: relative;
     width: 270px;
     height: 450px;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -302,10 +296,6 @@ a:focus{outline: 0;}
     float: right;
 }
 
-.other{
-    padding: 30px 0;
-}
-
 /* ================================================== THIRD PART ================================================== */
 
 .wrapper-3{
@@ -345,7 +335,7 @@ a:focus{outline: 0;}
     height: 400px;
     width: 300px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 10px;
     background: rgba(0, 0, 0, 0.932);
 }
 
@@ -497,6 +487,10 @@ footer{
     .details{
         width: 240px;
         height: 40px;
+    }
+
+    .other{
+        padding-bottom: 30px;
     }
     
     .demo,
