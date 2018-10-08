@@ -19,7 +19,9 @@ function parseJSAtOnload() {
 var anchors = document.querySelectorAll('a');
 
 anchors.forEach(element => {
-  element.addEventListener('click',function(){
-    animateScroll(document.querySelector(element.getAttribute("href")), 700, 'easeInOutQuint');
-  })
+  if(element.getAttribute('href') != 'media/other/portrait-large.gif'){
+    element.addEventListener('click',function(){
+      animateScroll(document.querySelector(element.getAttribute("href")), 700, 'easeInOutQuint');
+    })
+  }
 });
