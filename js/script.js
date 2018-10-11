@@ -57,10 +57,13 @@ var card = document.querySelector('.card');
 var wrapper2 = document.querySelector('.wrapper-2');
 card.addEventListener("mouseover", function(){
   body.style.background = 'rgba(0,0,0,.8)';
+  card.style.boxShadow = '0 8px 40px rgba(255, 255, 255, 0.5)';
 });
 card.addEventListener("mouseout", function(){
   body.style.background = '#fdfdfd';
+  card.style.boxShadow = '0 8px 40px rgba(0, 0, 0, 0.5)';
 });
 wrapper2.addEventListener("touchstart", function(){
   body.style.background = '#fdfdfd';
+  card.style.boxShadow = '0 8px 40px rgba(0, 0, 0, 0.5)';
 });
