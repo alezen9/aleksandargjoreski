@@ -34,7 +34,7 @@ function rotateCarousel() {
                 el.style.opacity = 0.1;
             }
         }else{
-            var i = (cellCount-Math.abs(selectedIndex%cellCount) == 5) ? 0 : cellCount-Math.abs(selectedIndex%cellCount);
+            var i = (cellCount-Math.abs(selectedIndex%cellCount) == cellCount) ? 0 : cellCount-Math.abs(selectedIndex%cellCount);
             if(index == i){
                 el.style.opacity = 1;
             }else{

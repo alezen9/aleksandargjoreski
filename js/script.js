@@ -25,3 +25,38 @@ anchors.forEach(element => {
     })
   }
 });
+
+// for button effect
+var pressElements = document.querySelectorAll('button');
+
+pressElements.forEach(element => {
+  element.addEventListener('touchstart',function() {touched(this)});
+  element.addEventListener('touchend',function() {moved(this)});
+});
+
+
+function touched(el){
+  pressElements.forEach(function (element, index) {
+    if(element === el){
+      element.classList.add("touched");
+    }
+  });
+}
+
+function moved (el){
+  pressElements.forEach(function (element) {
+    if(element === el){
+      element.classList.remove("touched");
+    }
+  });
+}
+
+// change body bg on card hover
+var body = document.querySelector('body');
+var card = document.querySelector('.card');
+card.addEventListener("mouseover", function(){
+  body.style.background = 'rgba(0,0,0,.8)';
+});
+card.addEventListener("mouseout", function(){
+  body.style.background = '#fdfdfd';
+});
