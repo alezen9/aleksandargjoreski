@@ -54,9 +54,13 @@ function moved (el){
 // change body bg on card hover
 var body = document.querySelector('body');
 var card = document.querySelector('.card');
+var wrapper2 = document.querySelector('.wrapper-2');
 card.addEventListener("mouseover", function(){
   body.style.background = 'rgba(0,0,0,.8)';
 });
 card.addEventListener("mouseout", function(){
+  body.style.background = '#fdfdfd';
+});
+wrapper2.addEventListener("touchstart", function(){
   body.style.background = '#fdfdfd';
 });
