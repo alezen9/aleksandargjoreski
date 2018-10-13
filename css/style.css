@@ -703,20 +703,14 @@ footer{
     
     .demo,
     .github,
-    .codepen_btn{
+    .single_btn{
         width: 120px;
         height: 40px;
         line-height: 40px;
         font-size: .7em;
     }
 
-    .login + .details .github,
-    .news + .details .github{
-        width: 240px;
-        border: none;
-    }
-
-    .codepen + .details .codepen_btn{
+    .details .single_btn{
         width: 240px;
         border: none;
     }
