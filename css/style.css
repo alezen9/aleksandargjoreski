@@ -577,7 +577,6 @@ a:focus{outline: 0;}
     -webkit-filter: drop-shadow(0 0 2px white);
             filter: drop-shadow(0 0 2px white);
 }
-
 .details{
     width: 300px;
     height: 50px;
