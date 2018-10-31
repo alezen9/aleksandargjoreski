@@ -1,5 +1,8 @@
 var carousel = document.querySelector('.carousel');
 var cells = carousel.querySelectorAll('.carousel__cell');
+cells.forEach(cell => {
+    cell.addEventListener('touchstart',(e)=>{e.preventDefault();});
+});
 var cellCount = cells.length; // cellCount set from cells-range input value
 var selectedIndex = 0;
 var cellWidth = carousel.offsetWidth;
