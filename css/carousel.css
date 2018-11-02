@@ -36,6 +36,7 @@
 .carousel__cell:nth-child(7) { transform: rotateY(240deg) translateZ(288px); }
 .carousel__cell:nth-child(8) { transform: rotateY(280deg) translateZ(288px); }
 .carousel__cell:nth-child(9) { transform: rotateY(320deg) translateZ(288px); }
+.carousel__cell:nth-child(10) { transform: rotateY(360deg) translateZ(288px); }
 
 
 

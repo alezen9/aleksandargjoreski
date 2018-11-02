@@ -19,7 +19,7 @@ function parseJSAtOnload() {
 var anchors = document.querySelectorAll('a');
 
 anchors.forEach(element => {
-  if(element.getAttribute('href') != 'media/other/portrait-large.gif'){
+  if((element.id == 'arrow-1') || (element.id == 'arrow-2') || (element.id == 'arrow-3')){
     element.addEventListener('click',function(){
       animateScroll(document.querySelector(element.getAttribute("href")), 700, 'easeInOutQuint');
     })
