@@ -1,3 +1,14 @@
+// google analythics
+var head = document.querySelector('head');
+var script1 = document.createElement('script');
+script1.setAttribute('src','https://www.googletagmanager.com/gtag/js?id=UA-120730567-2');
+script1_att = document.createAttribute('async');
+script1.setAttributeNode(script1_att);
+head.appendChild(script1);
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-120730567-2');
 // deferr javascript
 function parseJSAtOnload() {
   var links = ["js/AnimateScroll.min.js", "js/alexBox.min.js","js/carousel.min.js"],
