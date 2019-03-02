@@ -4,7 +4,23 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background: #fdfdfd;
+    background: aliceblue;
+}
+
+/* scrollbar here */
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: #929292;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: coral;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 @-webkit-keyframes resize {
@@ -383,10 +399,10 @@ a{
     overflow: hidden;
     -webkit-box-shadow: 0 8px 40px rgba(0,0,0, .2);
             box-shadow: 0 8px 40px rgba(0,0,0, .2);
-    background: #FDFEFF;
-    -webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -o-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: aliceblue;
+    -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
     z-index: 5;
 }
@@ -398,9 +414,9 @@ a{
     height: 100%;
     background: rgba(0, 0, 0, 0.842);
     opacity: 0;
-    -webkit-transition: opacity 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -o-transition: opacity 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition: opacity 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-transition: opacity .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: opacity .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .card:hover{
     -webkit-box-shadow: 0 8px 40px rgba(255, 255, 255, 0.3);
